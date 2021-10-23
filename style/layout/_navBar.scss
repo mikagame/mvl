@@ -34,5 +34,25 @@ nav {
         align-items: center;
         justify-items: center;
         margin: 0;
+        margin-bottom: 20px;
+        a,
+        p {
+            text-align: center;
+            margin: 0;
+            padding: 15px 0 15px 0;
+            width: 100%;
+            border-radius: 0;
+        }
+        p {
+            border: 1px solid #ffc400e0;
+            background-color: blue;
+            color: #ffc400e0;
+        }
+        a {
+            border: 1px solid blue;
+            &:hover {
+                border: 1px solid blue;
+            }
+        }
     }
 }

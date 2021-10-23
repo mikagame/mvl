@@ -19,6 +19,7 @@ body {
   padding-top: 20px;
   border-bottom: 3px solid blue;
   border-top: 3px solid blue;
+  color: white;
 }
 .home p {
   font-size: 22px;
@@ -58,6 +59,7 @@ body {
   padding-top: 20px;
   border-bottom: 3px solid blue;
   border-top: 3px solid blue;
+  color: white;
 }
 .projets p {
   font-size: 22px;
@@ -238,5 +240,25 @@ nav p {
     align-items: center;
     justify-items: center;
     margin: 0;
+    margin-bottom: 20px;
+  }
+  nav a,
+nav p {
+    text-align: center;
+    margin: 0;
+    padding: 15px 0 15px 0;
+    width: 100%;
+    border-radius: 0;
+  }
+  nav p {
+    border: 1px solid #ffc400e0;
+    background-color: blue;
+    color: #ffc400e0;
+  }
+  nav a {
+    border: 1px solid blue;
+  }
+  nav a:hover {
+    border: 1px solid blue;
   }
 }/*# sourceMappingURL=main.css.map */
