@@ -1,0 +1,50 @@
+footer {
+    position: sticky;
+    right: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: center;
+    background: linear-gradient(135deg, #024d94, #008bdb);
+    padding: 40px 10% 40px 10%;
+    p,
+    i {
+        color: white;
+        font-size: 20px;
+    }
+}
+
+.mailPhone {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    i {
+        margin-bottom: 10px;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        &:hover {
+            color: #ffc400e0;
+            border-bottom: 2px solid #ffc400e0;
+            i {
+                color: rgba(255, 196, 0, 0.877);
+            }
+        }
+    }
+}
+
+.reseau {
+    display: flex;
+    justify-content: center;
+    i {
+        font-size: 25px;
+        margin-right: 15px;
+    }
+    a:hover {
+        i {
+            color: rgba(255, 196, 0, 0.877);
+        }
+    }
+}

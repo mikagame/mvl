@@ -1,0 +1,26 @@
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 30px 60px 30px 60px;
+    a {
+        font-size: 25px;
+        padding: 6px;
+        margin-left: 10px;
+        text-decoration: none;
+        color: black;
+        border-bottom: 2px solid transparent;
+        &:hover {
+            border-bottom: 2px solid #024d94;
+            color: #024d94;
+        }
+    }
+    p {
+        border: 2px solid #024d94;
+        border-radius: 10px;
+        color: #024d94;
+        font-size: 25px;
+        padding: 6px;
+        margin-left: 10px;
+    }
+}
