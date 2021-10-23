@@ -5,7 +5,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-content: center;
-    background: linear-gradient(135deg, #024d94, #008bdb);
+    background: linear-gradient(135deg, #1b162c, #6000f7, #9c00b2);
     padding: 40px 10% 40px 10%;
     p,
     i {
@@ -46,5 +46,25 @@ footer {
         i {
             color: rgba(255, 196, 0, 0.877);
         }
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+    .address {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .address,
+    .mailPhone,
+    .reseau {
+        width: 100%;
+        align-items: center;
     }
 }
