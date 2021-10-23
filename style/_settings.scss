@@ -4,5 +4,16 @@
 }
 
 body {
+    background-color: white;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
     background-color: black;
+    img {
+        object-fit: cover;
+        width: 40%;
+        min-width: 500px;
+    }
 }

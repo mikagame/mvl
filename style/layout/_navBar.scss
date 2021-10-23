@@ -1,12 +1,13 @@
 nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    margin: 30px 60px 30px 60px;
+    background-color: black;
+    padding: 50px;
     a {
         font-size: 25px;
         padding: 6px;
-        margin-left: 10px;
+        margin-left: 20px;
         text-decoration: none;
         color: white;
         border-bottom: 2px solid transparent;
@@ -28,31 +29,10 @@ nav {
 
 @media only screen and (max-width: 599px) {
     nav {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        align-items: center;
-        justify-items: center;
-        margin: 0;
-        margin-bottom: 20px;
         a,
         p {
-            text-align: center;
-            margin: 0;
-            padding: 15px 0 15px 0;
-            width: 100%;
-            border-radius: 0;
-        }
-        p {
-            border: 1px solid #ffc400e0;
-            background-color: blue;
-            color: #ffc400e0;
-        }
-        a {
-            border: 1px solid blue;
-            &:hover {
-                border: 1px solid blue;
-            }
+            font-size: 18px;
+            margin-left: 5px;
         }
     }
 }
