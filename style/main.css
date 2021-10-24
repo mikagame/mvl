@@ -746,7 +746,7 @@ textarea {
 header {
   display: flex;
   justify-content: center;
-  background: linear-gradient(135deg, #1b162c, #6000f7, #780088);
+  background: linear-gradient(135deg, blue, #780088, #e0ac00, #5eff00, #ff4800);
   padding: 40px 0 40px 0;
 }
 header img {
@@ -760,7 +760,7 @@ h1 {
   font-size: 35px;
   margin-left: 30px;
   text-align: center;
-  color: white;
+  color: black;
 }
 
 @media only screen and (max-width: 599px) {
@@ -776,12 +776,12 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-content: center;
-  background: linear-gradient(135deg, #1b162c, #6000f7, #9c00b2);
+  background: linear-gradient(135deg, blue, #780088, #e0ac00, #5eff00, #ff4800);
   padding: 40px 10% 40px 10%;
 }
 footer p,
 footer i {
-  color: white;
+  color: black;
   font-size: 20px;
 }
 
@@ -795,15 +795,15 @@ footer i {
 }
 .mailPhone a {
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: 20px;
 }
 .mailPhone a:hover {
-  color: #ffc400e0;
-  border-bottom: 2px solid #ffc400e0;
+  color: #6be209e0;
+  border-bottom: 2px solid #e22a09e0;
 }
 .mailPhone a:hover i {
-  color: rgba(255, 196, 0, 0.877);
+  color: #e22a09e0;
 }
 
 .reseau {
@@ -815,7 +815,7 @@ footer i {
   margin-right: 15px;
 }
 .reseau a:hover i {
-  color: rgba(255, 196, 0, 0.877);
+  color: #e22a09e0;
 }
 
 @media only screen and (max-width: 599px) {
