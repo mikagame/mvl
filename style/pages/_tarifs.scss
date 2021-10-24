@@ -1,0 +1,27 @@
+.tarifs {
+    margin: 0 5% 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+        // margin-bottom: 30px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        //  border-bottom: 3px solid blue;
+        color: white;
+    }
+    p {
+        font-size: 22px;
+        margin-bottom: 10px;
+        color: black;
+        padding: 5px;
+    }
+}
+
+#heroTarif {
+    border-top: 2px solid #5eff00;
+    border-bottom: 2px solid #5eff00;
+}
