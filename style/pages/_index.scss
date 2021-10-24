@@ -1,13 +1,16 @@
 .home {
     margin: 0 5% 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     h2 {
         font-size: 40px;
         font-weight: bold;
         text-align: center;
-        margin-bottom: 30px;
+        // margin-bottom: 30px;
         padding-bottom: 20px;
         padding-top: 20px;
-        border-bottom: 3px solid blue;
+        //  border-bottom: 3px solid blue;
         color: white;
     }
     p {
@@ -15,6 +18,49 @@
         margin-bottom: 10px;
         color: black;
         padding: 5px;
+    }
+}
+
+#A {
+    border-radius: 15px;
+    background: blue;
+    height: 5px;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.colorBorderAccueil {
+    width: 100%;
+    animation: 1.5s chReverseAccueil forwards ease-in-out;
+}
+
+.changeColorAccueil {
+    animation: 1.5s chAccueil forwards ease-in-out;
+}
+
+@keyframes chAccueil {
+    0% {
+        background: linear-gradient(135deg, #1b162c, #6000f7, #780088);
+        //  border-bottom: 3px solid white;
+        width: 0;
+    }
+    100% {
+        background: linear-gradient(135deg, #1b162c, #6000f7, #780088);
+        //border-bottom: 3px solid #780088;
+        width: 100%;
+    }
+}
+
+@keyframes chReverseAccueil {
+    0% {
+        background: blue;
+        // border-bottom: 3px solid #780088;
+        width: 0;
+    }
+    100% {
+        background: blue;
+        //  border-bottom: 3px solid white;
+        width: 100%;
     }
 }
 
@@ -36,4 +82,14 @@
     }
 }
 
-@media only screen and (max-width: 599px) {}
+@media only screen and (max-width: 599px) {
+    .home {
+        margin-bottom: 30px;
+        h2 {
+            font-size: 25px;
+        }
+        p {
+            font-size: 18px;
+        }
+    }
+}

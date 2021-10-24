@@ -21,15 +21,16 @@ body {
 
 .home {
   margin: 0 5% 0 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .home h2 {
   font-size: 40px;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 30px;
   padding-bottom: 20px;
   padding-top: 20px;
-  border-bottom: 3px solid blue;
   color: white;
 }
 .home p {
@@ -39,6 +40,66 @@ body {
   padding: 5px;
 }
 
+#A {
+  border-radius: 15px;
+  background: blue;
+  height: 5px;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.colorBorderAccueil {
+  width: 100%;
+  -webkit-animation: 1.5s chReverseAccueil forwards ease-in-out;
+          animation: 1.5s chReverseAccueil forwards ease-in-out;
+}
+
+.changeColorAccueil {
+  -webkit-animation: 1.5s chAccueil forwards ease-in-out;
+          animation: 1.5s chAccueil forwards ease-in-out;
+}
+
+@-webkit-keyframes chAccueil {
+  0% {
+    background: linear-gradient(135deg, #1b162c, #6000f7, #780088);
+    width: 0;
+  }
+  100% {
+    background: linear-gradient(135deg, #1b162c, #6000f7, #780088);
+    width: 100%;
+  }
+}
+
+@keyframes chAccueil {
+  0% {
+    background: linear-gradient(135deg, #1b162c, #6000f7, #780088);
+    width: 0;
+  }
+  100% {
+    background: linear-gradient(135deg, #1b162c, #6000f7, #780088);
+    width: 100%;
+  }
+}
+@-webkit-keyframes chReverseAccueil {
+  0% {
+    background: blue;
+    width: 0;
+  }
+  100% {
+    background: blue;
+    width: 100%;
+  }
+}
+@keyframes chReverseAccueil {
+  0% {
+    background: blue;
+    width: 0;
+  }
+  100% {
+    background: blue;
+    width: 100%;
+  }
+}
 .presentation {
   margin: 5%;
   border: 1px solid blue;
@@ -57,6 +118,17 @@ body {
   border-bottom: 2px solid blue;
 }
 
+@media only screen and (max-width: 599px) {
+  .home {
+    margin-bottom: 30px;
+  }
+  .home h2 {
+    font-size: 25px;
+  }
+  .home p {
+    font-size: 18px;
+  }
+}
 .projets {
   margin: 0 5% 0 5%;
   display: flex;
@@ -451,7 +523,7 @@ nav p {
 
 @-webkit-keyframes show {
   0% {
-    opacity: 0;
+    opacity: 0.2;
     transform: translateY(30px);
   }
   100% {
@@ -462,7 +534,7 @@ nav p {
 
 @keyframes show {
   0% {
-    opacity: 0;
+    opacity: 0.2;
     transform: translateY(30px);
   }
   100% {
