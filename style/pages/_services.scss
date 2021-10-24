@@ -20,6 +20,9 @@
         padding-bottom: 20px;
         border-bottom: 3px solid #ffc400e0;
         color: white;
+        opacity: 0;
+        animation: 1s forwards trReverse ease-in-out;
+        animation-delay: 1s;
     }
     h4 {
         font-size: 22px;

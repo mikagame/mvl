@@ -22,16 +22,16 @@
 
 .colorBorder {
     width: 100%;
-    animation: 2s chReverse forwards ease-in-out;
+    animation: 1.5s chReverse forwards ease-in-out;
 }
 
 .changeColor {
-    animation: 2s ch forwards ease-in-out;
+    animation: 1.5s ch forwards ease-in-out;
 }
 
 @keyframes ch {
     0% {
-        background: white;
+        background: linear-gradient(135deg, #1b162c, #6000f7, #780088);
         //  border-bottom: 3px solid white;
         width: 0;
     }
@@ -44,7 +44,7 @@
 
 @keyframes chReverse {
     0% {
-        background: linear-gradient(135deg, #1b162c, #6000f7, #780088);
+        background: white;
         // border-bottom: 3px solid #780088;
         width: 0;
     }

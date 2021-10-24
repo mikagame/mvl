@@ -1,9 +1,9 @@
 .show {
-    animation: show 3s forwards ease-in-out;
+    animation: show 1.5s forwards ease-in-out;
 }
 
 .hide {
-    animation: hide 2s forwards ease-in-out;
+    animation: hide 1.5s forwards ease-in-out;
 }
 
 @keyframes show {
@@ -55,5 +55,29 @@
         border-top: 4px solid white;
         border-right: 4px solid white;
         border-bottom: 4px solid white;
+    }
+}
+
+h2 {
+    animation: 1s tr ease-in-out;
+}
+
+@keyframes tr {
+    0% {
+        transform: translateX(-3000px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes trReverse {
+    0% {
+        transform: translateX(3000px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
     }
 }
