@@ -91,3 +91,15 @@
     margin-bottom: 50px;
     opacity: 0;
 }
+
+@media only screen and (max-width: 599px) {
+    .services {
+        margin-bottom: 50px;
+        h2 {
+            font-size: 25px;
+        }
+        h3 {
+            font-size: 22px;
+        }
+    }
+}

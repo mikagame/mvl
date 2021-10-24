@@ -442,6 +442,17 @@ body {
   opacity: 0;
 }
 
+@media only screen and (max-width: 599px) {
+  .services {
+    margin-bottom: 50px;
+  }
+  .services h2 {
+    font-size: 25px;
+  }
+  .services h3 {
+    font-size: 22px;
+  }
+}
 .tarifs {
   margin: 0 5% 0 5%;
   display: flex;
@@ -553,8 +564,9 @@ body {
 .tarifVitrine h3,
 .tarifcommerce h3,
 .maintenance h3 {
+  text-align: center;
   margin-bottom: 10px;
-  font-size: 25px;
+  font-size: 22px;
 }
 .tarifVitrine p,
 .tarifcommerce p,
@@ -633,10 +645,18 @@ body {
   }
 }
 @media only screen and (max-width: 599px) {
+  .tarifs h2 {
+    font-size: 25px;
+  }
+
   .groupeTarif,
 .info {
     display: flex;
     flex-direction: column;
+  }
+  .groupeTarif h3,
+.info h3 {
+    font-size: 20px;
   }
 }
 .contact {
@@ -644,6 +664,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 50px;
 }
 .contact h2 {
   font-size: 40px;
@@ -665,6 +686,63 @@ body {
   border-bottom: 2px solid #ff4800;
 }
 
+.coordonnees,
+.demande {
+  width: 100%;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 60%;
+  gap: 30px;
+  justify-items: center;
+}
+
+input {
+  height: 20px;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+textarea {
+  width: 80%;
+  height: 200px;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+.coordonnees {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.coordonnees button {
+  padding: 15px;
+}
+
+.demande {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (max-width: 599px) {
+  .contact h2 {
+    font-size: 25px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  textarea {
+    width: 100%;
+    padding: 10px 0 10px 0;
+  }
+}
 header {
   display: flex;
   justify-content: center;

@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 50px;
     h2 {
         font-size: 40px;
         font-weight: bold;
@@ -24,4 +25,62 @@
 #heroContact {
     border-top: 2px solid #ff4800;
     border-bottom: 2px solid #ff4800;
+}
+
+.coordonnees,
+.demande {
+    width: 100%;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 60%;
+    gap: 30px;
+    justify-items: center;
+}
+
+input {
+    height: 20px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+textarea {
+    width: 80%;
+    height: 200px;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+.coordonnees {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    button {
+        padding: 15px;
+    }
+}
+
+.demande {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (max-width: 599px) {
+    .contact {
+        h2 {
+            font-size: 25px;
+        }
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    textarea {
+        width: 100%;
+        padding: 10px 0 10px 0;
+    }
 }
