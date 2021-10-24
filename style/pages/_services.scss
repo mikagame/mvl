@@ -33,37 +33,7 @@
     }
 }
 
-.infoServices {
+#services {
     margin-bottom: 50px;
     opacity: 0;
-}
-
-.showServices {
-    animation: show 2s forwards ease-in-out;
-}
-
-.hideServices {
-    animation: hide 2s forwards ease-in-out;
-}
-
-@keyframes show {
-    0% {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes hide {
-    0% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    100% {
-        opacity: 0;
-        transform: translateY(30px);
-    }
 }
