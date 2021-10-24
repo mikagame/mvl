@@ -121,6 +121,9 @@
 @media only screen and (max-width: 599px) {
     .projets {
         margin-bottom: 50px;
+        h2 {
+            font-size: 25px;
+        }
     }
     .projetVitrine {
         display: flex;

@@ -112,6 +112,7 @@ body {
   padding: 20px;
   box-shadow: 6px 6px 10px black;
   background-color: #eceaea;
+  transform: scale(0);
 }
 .presentation a {
   font-weight: bolder;
@@ -316,6 +317,9 @@ body {
 @media only screen and (max-width: 599px) {
   .projets {
     margin-bottom: 50px;
+  }
+  .projets h2 {
+    font-size: 25px;
   }
 
   .projetVitrine {
