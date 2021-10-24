@@ -16,13 +16,13 @@
         text-align: center;
         width: 100%;
         font-size: 30px;
-        margin-bottom: 60px;
+        // margin-bottom: 60px;
         padding-bottom: 20px;
-        border-bottom: 3px solid #ffc400e0;
+        // border-bottom: 3px solid #ffc400e0;
         color: white;
         opacity: 0;
-        animation: 1s forwards trReverse ease-in-out;
-        animation-delay: 1s;
+        animation: 0.5s forwards trReverse ease-in-out;
+        animation-delay: 0.5s;
     }
     h4 {
         font-size: 22px;
@@ -33,6 +33,52 @@
         font-size: 18px;
         margin-bottom: 15px;
         color: white;
+        padding-bottom: 15px;
+        border-bottom: 3px solid #ffc400e0;
+    }
+}
+
+#S {
+    border-radius: 15px;
+    background: #ffc400e0;
+    height: 5px;
+    width: 100%;
+    margin-bottom: 60px;
+    // border-bottom: 3px solid white;
+}
+
+.colorBorderService {
+    width: 100%;
+    animation: 1.5s chReverseService forwards ease-in-out;
+}
+
+.changeColorService {
+    animation: 1.5s chService forwards ease-in-out;
+}
+
+@keyframes chService {
+    0% {
+        background: linear-gradient(135deg, #1b162c, #6000f7, #780088);
+        //  border-bottom: 3px solid white;
+        width: 0;
+    }
+    100% {
+        background: linear-gradient(135deg, #1b162c, #6000f7, #780088);
+        //border-bottom: 3px solid #780088;
+        width: 100%;
+    }
+}
+
+@keyframes chReverseService {
+    0% {
+        background: #ffc400e0;
+        // border-bottom: 3px solid #780088;
+        width: 0;
+    }
+    100% {
+        background: #ffc400e0;
+        //  border-bottom: 3px solid white;
+        width: 100%;
     }
 }
 

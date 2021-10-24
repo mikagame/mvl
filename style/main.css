@@ -222,15 +222,13 @@ body {
   text-align: center;
   width: 100%;
   font-size: 30px;
-  margin-bottom: 60px;
   padding-bottom: 20px;
-  border-bottom: 3px solid #ffc400e0;
   color: white;
   opacity: 0;
-  -webkit-animation: 1s forwards trReverse ease-in-out;
-          animation: 1s forwards trReverse ease-in-out;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation: 0.5s forwards trReverse ease-in-out;
+          animation: 0.5s forwards trReverse ease-in-out;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 .services h4 {
   font-size: 22px;
@@ -241,8 +239,70 @@ body {
   font-size: 18px;
   margin-bottom: 15px;
   color: white;
+  padding-bottom: 15px;
+  border-bottom: 3px solid #ffc400e0;
 }
 
+#S {
+  border-radius: 15px;
+  background: #ffc400e0;
+  height: 5px;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.colorBorderService {
+  width: 100%;
+  -webkit-animation: 1.5s chReverseService forwards ease-in-out;
+          animation: 1.5s chReverseService forwards ease-in-out;
+}
+
+.changeColorService {
+  -webkit-animation: 1.5s chService forwards ease-in-out;
+          animation: 1.5s chService forwards ease-in-out;
+}
+
+@-webkit-keyframes chService {
+  0% {
+    background: linear-gradient(135deg, #1b162c, #6000f7, #780088);
+    width: 0;
+  }
+  100% {
+    background: linear-gradient(135deg, #1b162c, #6000f7, #780088);
+    width: 100%;
+  }
+}
+
+@keyframes chService {
+  0% {
+    background: linear-gradient(135deg, #1b162c, #6000f7, #780088);
+    width: 0;
+  }
+  100% {
+    background: linear-gradient(135deg, #1b162c, #6000f7, #780088);
+    width: 100%;
+  }
+}
+@-webkit-keyframes chReverseService {
+  0% {
+    background: #ffc400e0;
+    width: 0;
+  }
+  100% {
+    background: #ffc400e0;
+    width: 100%;
+  }
+}
+@keyframes chReverseService {
+  0% {
+    background: #ffc400e0;
+    width: 0;
+  }
+  100% {
+    background: #ffc400e0;
+    width: 100%;
+  }
+}
 #services {
   margin-bottom: 50px;
   opacity: 0;
@@ -484,8 +544,8 @@ nav p {
   }
 }
 h2 {
-  -webkit-animation: 1s tr ease-in-out;
-          animation: 1s tr ease-in-out;
+  -webkit-animation: 0.5s tr ease-in-out;
+          animation: 0.5s tr ease-in-out;
 }
 
 @-webkit-keyframes tr {
