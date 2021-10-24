@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: white;
+  background-color: black;
 }
 
 .hero {
@@ -30,7 +30,7 @@ body {
   padding-bottom: 20px;
   padding-top: 20px;
   border-bottom: 3px solid blue;
-  color: black;
+  color: white;
 }
 .home p {
   font-size: 22px;
@@ -45,7 +45,7 @@ body {
   border-radius: 10px;
   padding: 20px;
   box-shadow: 6px 6px 10px black;
-  background-color: #b9b7b7;
+  background-color: #eceaea;
 }
 .presentation a {
   font-weight: bolder;
@@ -71,8 +71,9 @@ body {
   margin-bottom: 60px;
   padding-bottom: 20px;
   padding-top: 20px;
-  border-bottom: 3px solid black;
-  color: black;
+  border-bottom: 3px solid #780088;
+  color: white;
+  background-color: black;
 }
 .projets p {
   font-size: 22px;
@@ -83,11 +84,11 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 50px;
+  gap: 30px;
   margin-bottom: 60px;
   max-width: 1500px;
-  background-color: #b9b7b7;
-  padding: 50px;
+  background-color: #eceaea;
+  padding: 30px;
   border-radius: 10px;
   box-shadow: 6px 6px 10px #474747;
 }
@@ -135,9 +136,9 @@ body {
     flex-direction: column;
     margin: 0 10% 0 10%;
     padding: 0;
-    background-color: #b9b7b7;
     border: none;
     box-shadow: none;
+    background-color: black;
   }
 }
 .services {
@@ -153,7 +154,7 @@ body {
   text-align: center;
   margin-bottom: 20px;
   padding-top: 20px;
-  color: black;
+  color: white;
 }
 .services h3 {
   text-align: center;
@@ -161,13 +162,76 @@ body {
   font-size: 30px;
   margin-bottom: 60px;
   padding-bottom: 20px;
-  border-bottom: 3px solid blue;
+  border-bottom: 3px solid #ffc400e0;
+  color: white;
+}
+.services h4 {
+  font-size: 22px;
+  color: white;
+  margin-bottom: 5px;
 }
 .services p {
-  font-size: 22px;
-  margin-bottom: 10px;
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: white;
 }
 
+.infoServices {
+  margin-bottom: 50px;
+  opacity: 0;
+}
+
+.showServices {
+  -webkit-animation: show 2s forwards ease-in-out;
+          animation: show 2s forwards ease-in-out;
+}
+
+.hideServices {
+  -webkit-animation: hide 2s forwards ease-in-out;
+          animation: hide 2s forwards ease-in-out;
+}
+
+@-webkit-keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes hide {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+}
+@keyframes hide {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+}
 header {
   display: flex;
   justify-content: center;
@@ -297,5 +361,35 @@ nav p {
 nav p {
     font-size: 18px;
     margin-left: 5px;
+  }
+}
+.show {
+  -webkit-animation: show 2s forwards ease-in-out;
+          animation: show 2s forwards ease-in-out;
+}
+
+.hide {
+  -webkit-animation: hide 2s forwards ease-in-out;
+          animation: hide 2s forwards ease-in-out;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes hide {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(30px);
   }
 }/*# sourceMappingURL=main.css.map */
