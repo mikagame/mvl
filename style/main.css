@@ -123,6 +123,49 @@ body {
   border-bottom: 2px solid blue;
 }
 
+.showPres {
+  -webkit-animation: 1s showpres ease-in-out forwards;
+          animation: 1s showpres ease-in-out forwards;
+}
+
+.hidePres {
+  -webkit-animation: 1s hidepres ease-in-out forwards;
+          animation: 1s hidepres ease-in-out forwards;
+}
+
+@-webkit-keyframes showpres {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes showpres {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes hidepres {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes hidepres {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
 @media only screen and (max-width: 599px) {
   .home {
     margin-bottom: 30px;
