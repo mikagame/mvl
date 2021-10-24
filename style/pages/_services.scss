@@ -38,6 +38,11 @@
     }
 }
 
+#heroService {
+    border-top: 2px solid #ffc400e0;
+    border-bottom: 2px solid #ffc400e0;
+}
+
 #S {
     border-radius: 15px;
     background: #ffc400e0;
@@ -58,12 +63,12 @@
 
 @keyframes chService {
     0% {
-        background: linear-gradient(135deg, #1b162c, #6000f7, #780088);
+        background: #ffc400e0;
         //  border-bottom: 3px solid white;
         width: 0;
     }
     100% {
-        background: linear-gradient(135deg, #1b162c, #6000f7, #780088);
+        background: #ffc400e0;
         //border-bottom: 3px solid #780088;
         width: 100%;
     }

@@ -40,6 +40,11 @@ body {
   padding: 5px;
 }
 
+#heroAccueil {
+  border-top: 2px solid blue;
+  border-bottom: 2px solid blue;
+}
+
 #A {
   border-radius: 15px;
   background: blue;
@@ -61,22 +66,22 @@ body {
 
 @-webkit-keyframes chAccueil {
   0% {
-    background: linear-gradient(135deg, #1b162c, #6000f7, #780088);
+    background: blue;
     width: 0;
   }
   100% {
-    background: linear-gradient(135deg, #1b162c, #6000f7, #780088);
+    background: blue;
     width: 100%;
   }
 }
 
 @keyframes chAccueil {
   0% {
-    background: linear-gradient(135deg, #1b162c, #6000f7, #780088);
+    background: blue;
     width: 0;
   }
   100% {
-    background: linear-gradient(135deg, #1b162c, #6000f7, #780088);
+    background: blue;
     width: 100%;
   }
 }
@@ -150,6 +155,11 @@ body {
   margin-bottom: 10px;
 }
 
+#heroProjet {
+  border-top: 2px solid #780088;
+  border-bottom: 2px solid #780088;
+}
+
 .colorBorder {
   width: 100%;
   -webkit-animation: 1.5s chReverse forwards ease-in-out;
@@ -163,48 +173,48 @@ body {
 
 @-webkit-keyframes ch {
   0% {
-    background: linear-gradient(135deg, #1b162c, #6000f7, #780088);
+    background: #780088;
     width: 0;
   }
   100% {
-    background: linear-gradient(135deg, #1b162c, #6000f7, #780088);
+    background: #780088;
     width: 100%;
   }
 }
 
 @keyframes ch {
   0% {
-    background: linear-gradient(135deg, #1b162c, #6000f7, #780088);
+    background: #780088;
     width: 0;
   }
   100% {
-    background: linear-gradient(135deg, #1b162c, #6000f7, #780088);
+    background: #780088;
     width: 100%;
   }
 }
 @-webkit-keyframes chReverse {
   0% {
-    background: white;
+    background: #780088;
     width: 0;
   }
   100% {
-    background: white;
+    background: #780088;
     width: 100%;
   }
 }
 @keyframes chReverse {
   0% {
-    background: white;
+    background: #780088;
     width: 0;
   }
   100% {
-    background: white;
+    background: #780088;
     width: 100%;
   }
 }
 #T {
   border-radius: 15px;
-  background: white;
+  background: #780088;
   height: 5px;
   width: 100%;
   margin-bottom: 60px;
@@ -315,6 +325,11 @@ body {
   border-bottom: 3px solid #ffc400e0;
 }
 
+#heroService {
+  border-top: 2px solid #ffc400e0;
+  border-bottom: 2px solid #ffc400e0;
+}
+
 #S {
   border-radius: 15px;
   background: #ffc400e0;
@@ -336,22 +351,22 @@ body {
 
 @-webkit-keyframes chService {
   0% {
-    background: linear-gradient(135deg, #1b162c, #6000f7, #780088);
+    background: #ffc400e0;
     width: 0;
   }
   100% {
-    background: linear-gradient(135deg, #1b162c, #6000f7, #780088);
+    background: #ffc400e0;
     width: 100%;
   }
 }
 
 @keyframes chService {
   0% {
-    background: linear-gradient(135deg, #1b162c, #6000f7, #780088);
+    background: #ffc400e0;
     width: 0;
   }
   100% {
-    background: linear-gradient(135deg, #1b162c, #6000f7, #780088);
+    background: #ffc400e0;
     width: 100%;
   }
 }
@@ -378,6 +393,32 @@ body {
 #services {
   margin-bottom: 50px;
   opacity: 0;
+}
+
+.contact {
+  margin: 0 5% 0 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact h2 {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  color: white;
+}
+.contact p {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: black;
+  padding: 5px;
+}
+
+#heroContact {
+  border-top: 2px solid #ff4800;
+  border-bottom: 2px solid #ff4800;
 }
 
 header {
@@ -489,19 +530,35 @@ nav a {
   margin-left: 20px;
   text-decoration: none;
   color: white;
-  border-bottom: 2px solid transparent;
+  border: 2px solid transparent;
 }
 nav a:hover {
-  border-bottom: 2px solid #ffc400e0;
-  color: #ffc400e0;
+  border: 2px solid white;
+  border-radius: 10px;
 }
 nav p {
-  border: 2px solid #780088;
   border-radius: 10px;
   color: white;
   font-size: 25px;
   padding: 6px;
   margin-left: 20px;
+}
+
+#navAccueil p {
+  border: 2px solid blue;
+  border-radius: 10px;
+}
+
+#navProjet p {
+  border: 2px solid #780088;
+}
+
+#navService p {
+  border: 2px solid #ffc400e0;
+}
+
+#navContact p {
+  border: 2px solid #ff4800;
 }
 
 @media only screen and (max-width: 599px) {

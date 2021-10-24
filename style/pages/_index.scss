@@ -21,6 +21,11 @@
     }
 }
 
+#heroAccueil {
+    border-top: 2px solid blue;
+    border-bottom: 2px solid blue;
+}
+
 #A {
     border-radius: 15px;
     background: blue;
@@ -40,12 +45,12 @@
 
 @keyframes chAccueil {
     0% {
-        background: linear-gradient(135deg, #1b162c, #6000f7, #780088);
+        background: blue;
         //  border-bottom: 3px solid white;
         width: 0;
     }
     100% {
-        background: linear-gradient(135deg, #1b162c, #6000f7, #780088);
+        background: blue;
         //border-bottom: 3px solid #780088;
         width: 100%;
     }
