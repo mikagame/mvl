@@ -8,10 +8,9 @@
         font-size: 40px;
         font-weight: bold;
         text-align: center;
-        margin-bottom: 60px;
+        //  margin-bottom: 60px;
         padding-bottom: 20px;
         padding-top: 20px;
-        border-bottom: 3px solid #780088;
         color: white;
         background-color: black;
     }
@@ -21,8 +20,47 @@
     }
 }
 
-.projetVitrine {
+.colorBorder {
+    width: 100%;
+    animation: 1s chReverse forwards ease-in-out;
+}
+
+.changeColor {
+    animation: 1s ch forwards ease-in-out;
+}
+
+@keyframes ch {
+    0% {
+        border-bottom: 3px solid white;
+        width: 0;
+    }
+    100% {
+        border-bottom: 3px solid #780088;
+        width: 100%;
+    }
+}
+
+@keyframes chReverse {
+    0% {
+        border-bottom: 3px solid #780088;
+        width: 0;
+    }
+    100% {
+        border-bottom: 3px solid white;
+        width: 100%;
+    }
+}
+
+#T {
+    margin-bottom: 60px;
+    border-bottom: 3px solid white;
+}
+
+#projets {
     opacity: 0;
+}
+
+.projetVitrine {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
