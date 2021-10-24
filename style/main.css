@@ -686,6 +686,109 @@ body {
   border-bottom: 2px solid #ff4800;
 }
 
+#C {
+  border-radius: 15px;
+  background: #ff4800;
+  height: 5px;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.colorBorderContact {
+  width: 100%;
+  -webkit-animation: 1.5s chReverseContact forwards ease-in-out;
+          animation: 1.5s chReverseContact forwards ease-in-out;
+}
+
+.changeColorContact {
+  -webkit-animation: 1.5s chContact forwards ease-in-out;
+          animation: 1.5s chContact forwards ease-in-out;
+}
+
+@-webkit-keyframes chContact {
+  0% {
+    background: #ff4800;
+    width: 0;
+  }
+  100% {
+    background: #ff4800;
+    width: 100%;
+  }
+}
+
+@keyframes chContact {
+  0% {
+    background: #ff4800;
+    width: 0;
+  }
+  100% {
+    background: #ff4800;
+    width: 100%;
+  }
+}
+@-webkit-keyframes chReverseContact {
+  0% {
+    background: #ff4800;
+    width: 0;
+  }
+  100% {
+    background: #ff4800;
+    width: 100%;
+  }
+}
+@keyframes chReverseContact {
+  0% {
+    background: #ff4800;
+    width: 0;
+  }
+  100% {
+    background: #ff4800;
+    width: 100%;
+  }
+}
+.showForm {
+  -webkit-animation: 1s showform ease-in-out forwards;
+          animation: 1s showform ease-in-out forwards;
+}
+
+.hideForm {
+  -webkit-animation: 1s hideform ease-in-out forwards;
+          animation: 1s hideform ease-in-out forwards;
+}
+
+@-webkit-keyframes showform {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes showform {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes hideform {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes hideform {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
 .coordonnees,
 .demande {
   width: 100%;
@@ -697,6 +800,7 @@ form {
   width: 60%;
   gap: 30px;
   justify-items: center;
+  transform: scale(0);
 }
 
 input {
@@ -1012,9 +1116,49 @@ nav p {
     border-bottom: 4px solid white;
   }
 }
-h2 {
+.home h2,
+.projets h2,
+.services h2 {
   -webkit-animation: 0.5s tr ease-in-out;
           animation: 0.5s tr ease-in-out;
+}
+
+.tarifs h2 span {
+  opacity: 0;
+}
+.tarifs h2 #tarif1 {
+  -webkit-animation: 0.2s forwards time ease-in-out;
+          animation: 0.2s forwards time ease-in-out;
+}
+.tarifs h2 #tarif2 {
+  -webkit-animation: 0.2s time forwards ease-in-out;
+          animation: 0.2s time forwards ease-in-out;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+.tarifs h2 #tarif3 {
+  -webkit-animation: 0.2s time forwards ease-in-out;
+          animation: 0.2s time forwards ease-in-out;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+.tarifs h2 #tarif4 {
+  -webkit-animation: 0.2s time forwards ease-in-out;
+          animation: 0.2s time forwards ease-in-out;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+.tarifs h2 #tarif5 {
+  -webkit-animation: 0.2s time forwards ease-in-out;
+          animation: 0.2s time forwards ease-in-out;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+.tarifs h2 #tarif6 {
+  -webkit-animation: 0.2s time forwards ease-in-out;
+          animation: 0.2s time forwards ease-in-out;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 @-webkit-keyframes tr {
@@ -1052,5 +1196,87 @@ h2 {
   100% {
     transform: translateX(0);
     opacity: 1;
+  }
+}
+@-webkit-keyframes time {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes time {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes timeReverse {
+  0% {
+    transform: translateX(3000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes timeReverse {
+  0% {
+    transform: translateX(3000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.contact h2 {
+  -webkit-animation: 0.5s tremble forwards ease-in-out;
+          animation: 0.5s tremble forwards ease-in-out;
+}
+
+@-webkit-keyframes tremble {
+  0% {
+    transform: translateY(20px);
+  }
+  20% {
+    transform: translateY(-20px);
+  }
+  40% {
+    transform: translateY(10px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+  80% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes tremble {
+  0% {
+    transform: translateY(20px);
+  }
+  20% {
+    transform: translateY(-20px);
+  }
+  40% {
+    transform: translateY(10px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+  80% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }/*# sourceMappingURL=main.css.map */

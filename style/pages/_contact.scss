@@ -27,6 +27,75 @@
     border-bottom: 2px solid #ff4800;
 }
 
+#C {
+    border-radius: 15px;
+    background: #ff4800;
+    height: 5px;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.colorBorderContact {
+    width: 100%;
+    animation: 1.5s chReverseContact forwards ease-in-out;
+}
+
+.changeColorContact {
+    animation: 1.5s chContact forwards ease-in-out;
+}
+
+@keyframes chContact {
+    0% {
+        background: #ff4800;
+        //  border-bottom: 3px solid white;
+        width: 0;
+    }
+    100% {
+        background: #ff4800;
+        //border-bottom: 3px solid #780088;
+        width: 100%;
+    }
+}
+
+@keyframes chReverseContact {
+    0% {
+        background: #ff4800;
+        // border-bottom: 3px solid #780088;
+        width: 0;
+    }
+    100% {
+        background: #ff4800;
+        //  border-bottom: 3px solid white;
+        width: 100%;
+    }
+}
+
+.showForm {
+    animation: 1s showform ease-in-out forwards;
+}
+
+.hideForm {
+    animation: 1s hideform ease-in-out forwards;
+}
+
+@keyframes showform {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes hideform {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
 .coordonnees,
 .demande {
     width: 100%;
@@ -38,6 +107,7 @@ form {
     width: 60%;
     gap: 30px;
     justify-items: center;
+    transform: scale(0);
 }
 
 input {
