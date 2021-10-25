@@ -4,11 +4,19 @@
     height: 100%;
     width: 100%;
     background-color: black;
+    // background: url("./img/ordi.png");
     animation: bg 4s ease-in-out;
     opacity: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#pc {
+    position: relative;
+    bottom: 100px;
+    object-fit: cover;
+    width: 80%;
 }
 
 .bar {
@@ -18,8 +26,14 @@
     align-items: center;
     flex-direction: column;
     color: white;
+    img {
+        border-radius: 10px;
+        object-fit: cover;
+    }
     p {
+        margin-top: 40px;
         text-align: center;
+        z-index: 10;
     }
 }
 
@@ -30,13 +44,17 @@
 #point1,
 #point2,
 #point3 {
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
     border-radius: 50%;
     background: linear-gradient(135deg, blue, #780088, #e0ac00, #5eff00, #ff4800);
     margin-right: 30px;
     margin-top: 30px;
     opacity: 0;
+    z-index: 10;
+    position: relative;
+    top: 12%;
+    left: 10px;
 }
 
 #point1 {
@@ -62,5 +80,18 @@
     }
     100% {
         opacity: 0;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    .bar {
+        p {
+            font-size: 40px;
+            margin-bottom: 100px;
+        }
+    }
+    .point {
+        position: relative;
+        bottom: 100px;
     }
 }
