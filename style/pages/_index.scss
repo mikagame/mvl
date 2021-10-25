@@ -70,20 +70,28 @@
 }
 
 .presentation {
+    text-align: center;
     margin: 5%;
-    border: 1px solid blue;
+    border: 2px solid white;
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 6px 6px 10px black;
-    background-color: rgb(236, 234, 234);
+    // box-shadow: 6px 6px 10px white;
+    //background-color: rgb(236, 234, 234);
+    background-color: rgb(59, 57, 57);
     transform: scale(0);
+    color: white;
+    p {
+        color: white;
+    }
     a {
+        font-size: 22px;
         font-weight: bolder;
         text-decoration: none;
-        color: blue;
+        color: #ffd54be0;
         border-bottom: 2px solid transparent;
         &:hover {
-            border-bottom: 2px solid blue;
+            color: #ff9100;
+            border-bottom: 2px solid #ff9100;
         }
     }
 }

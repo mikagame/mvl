@@ -106,22 +106,28 @@ body {
   }
 }
 .presentation {
+  text-align: center;
   margin: 5%;
-  border: 1px solid blue;
+  border: 2px solid white;
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 6px 6px 10px black;
-  background-color: #eceaea;
+  background-color: #3b3939;
   transform: scale(0);
+  color: white;
+}
+.presentation p {
+  color: white;
 }
 .presentation a {
+  font-size: 22px;
   font-weight: bolder;
   text-decoration: none;
-  color: blue;
+  color: #ffd54be0;
   border-bottom: 2px solid transparent;
 }
 .presentation a:hover {
-  border-bottom: 2px solid blue;
+  color: #ff9100;
+  border-bottom: 2px solid #ff9100;
 }
 
 .showPres {
