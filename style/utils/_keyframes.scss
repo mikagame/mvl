@@ -163,3 +163,18 @@
         transform: translateY(0);
     }
 }
+
+@keyframes bg {
+    0% {
+        opacity: 1;
+        z-index: 9998;
+    }
+    50% {
+        opacity: 1;
+        z-index: 9998;
+    }
+    100% {
+        opacity: 0;
+        z-index: 9998;
+    }
+}

@@ -573,6 +573,22 @@ body {
   border-radius: 10px;
   background-color: #3b3939;
 }
+.tarifVitrine button,
+.tarifcommerce button,
+.maintenance button {
+  cursor: pointer;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  background-color: #6060c0;
+  border-radius: 15px;
+  color: wheat;
+}
+.tarifVitrine button:hover,
+.tarifcommerce button:hover,
+.maintenance button:hover {
+  background-color: #3737c9;
+}
 .tarifVitrine h3,
 .tarifcommerce h3,
 .maintenance h3 {
@@ -691,6 +707,18 @@ body {
   margin-bottom: 10px;
   color: black;
   padding: 5px;
+}
+.contact button {
+  cursor: pointer;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  background-color: #6060c0;
+  border-radius: 15px;
+  color: wheat;
+}
+.contact button:hover {
+  background-color: #3737c9;
 }
 
 #heroContact {
@@ -857,6 +885,90 @@ textarea {
   textarea {
     width: 100%;
     padding: 10px 0 10px 0;
+  }
+}
+.loader {
+  position: fixed;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  -webkit-animation: bg 4s ease-in-out;
+          animation: bg 4s ease-in-out;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bar {
+  font-size: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+.bar p {
+  text-align: center;
+}
+
+.point {
+  display: flex;
+}
+
+#point1,
+#point2,
+#point3 {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, blue, #780088, #e0ac00, #5eff00, #ff4800);
+  margin-right: 30px;
+  margin-top: 30px;
+  opacity: 0;
+}
+
+#point1 {
+  -webkit-animation: point 1s infinite;
+          animation: point 1s infinite;
+}
+
+#point2 {
+  -webkit-animation: point 1s infinite;
+          animation: point 1s infinite;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+#point3 {
+  -webkit-animation: point 1s infinite;
+          animation: point 1s infinite;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+@-webkit-keyframes point {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes point {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 header {
@@ -1287,5 +1399,33 @@ nav p {
   }
   100% {
     transform: translateY(0);
+  }
+}
+@-webkit-keyframes bg {
+  0% {
+    opacity: 1;
+    z-index: 9998;
+  }
+  50% {
+    opacity: 1;
+    z-index: 9998;
+  }
+  100% {
+    opacity: 0;
+    z-index: 9998;
+  }
+}
+@keyframes bg {
+  0% {
+    opacity: 1;
+    z-index: 9998;
+  }
+  50% {
+    opacity: 1;
+    z-index: 9998;
+  }
+  100% {
+    opacity: 0;
+    z-index: 9998;
   }
 }/*# sourceMappingURL=main.css.map */

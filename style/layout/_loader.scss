@@ -1,0 +1,66 @@
+.loader {
+    position: fixed;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    animation: bg 4s ease-in-out;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar {
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    p {
+        text-align: center;
+    }
+}
+
+.point {
+    display: flex;
+}
+
+#point1,
+#point2,
+#point3 {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, blue, #780088, #e0ac00, #5eff00, #ff4800);
+    margin-right: 30px;
+    margin-top: 30px;
+    opacity: 0;
+}
+
+#point1 {
+    animation: point 1s infinite;
+}
+
+#point2 {
+    animation: point 1s infinite;
+    animation-delay: 0.2s;
+}
+
+#point3 {
+    animation: point 1s infinite;
+    animation-delay: 0.4s;
+}
+
+@keyframes point {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
