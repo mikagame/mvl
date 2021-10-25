@@ -1285,11 +1285,18 @@ nav p {
     border-bottom: 4px solid white;
   }
 }
-.home h2,
 .projets h2,
 .services h2 {
   -webkit-animation: 0.5s tr ease-in-out;
           animation: 0.5s tr ease-in-out;
+}
+
+.home h2 {
+  opacity: 0;
+  -webkit-animation: 0.5s tr ease-in-out forwards;
+          animation: 0.5s tr ease-in-out forwards;
+  -webkit-animation-delay: 2.8s;
+          animation-delay: 2.8s;
 }
 
 .tarifs h2 span {
@@ -1335,6 +1342,7 @@ nav p {
     transform: translateX(-3000px);
   }
   100% {
+    opacity: 1;
     transform: translateX(0);
   }
 }
@@ -1344,6 +1352,7 @@ nav p {
     transform: translateX(-3000px);
   }
   100% {
+    opacity: 1;
     transform: translateX(0);
   }
 }

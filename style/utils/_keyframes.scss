@@ -58,11 +58,18 @@
     }
 }
 
-.home,
 .projets,
 .services {
     h2 {
         animation: 0.5s tr ease-in-out;
+    }
+}
+
+.home {
+    h2 {
+        opacity: 0;
+        animation: 0.5s tr ease-in-out forwards;
+        animation-delay: 2.8s;
     }
 }
 
@@ -102,6 +109,7 @@
         transform: translateX(-3000px);
     }
     100% {
+        opacity: 1;
         transform: translateX(0);
     }
 }
