@@ -6,11 +6,11 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
     align-content: center;
     //background: linear-gradient(135deg, #1b162c, #6000f7, #9c00b2);
-    background: linear-gradient(135deg, blue, #780088, #e0ac00, #5eff00, #ff4800);
+    // background: linear-gradient(135deg, blue, #780088, #e0ac00, #5eff00, #ff4800);
     padding: 40px 10% 40px 10%;
     p,
     i {
-        color: black;
+        color: white;
         font-size: 20px;
     }
 }
@@ -24,11 +24,11 @@ footer {
     }
     a {
         text-decoration: none;
-        color: black;
+        color: white;
         font-size: 20px;
         &:hover {
-            color: #6be209e0;
-            border-bottom: 2px solid #e22a09e0;
+            color: #e22a09e0;
+            text-decoration: underline;
             i {
                 color: #e22a09e0;
             }
@@ -60,12 +60,10 @@ footer {
     .address {
         display: flex;
         flex-direction: column;
-        margin-bottom: 10px;
-    }
-    .address,
-    .mailPhone,
-    .reseau {
-        width: 100%;
+        margin-bottom: 20px;
         align-items: center;
+    }
+    .mailPhone {
+        margin-bottom: 20px;
     }
 }
